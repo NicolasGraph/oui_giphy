@@ -1,11 +1,11 @@
 <?php
 
 /*
- * This file is part of oui_player_giphy,
+ * This file is part of oui_giphy,
  * a oui_player v2+ extension to easily embed
  * Giphy customizable players in Textpattern CMS.
  *
- * https://github.com/NicolasGraph/oui_player_giphy
+ * https://github.com/NicolasGraph/oui_giphy
  *
  * Copyright (C) 2018 Nicolas Morand
  *
