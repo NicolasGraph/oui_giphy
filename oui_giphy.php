@@ -44,15 +44,9 @@ namespace Oui {
             protected static $src = '//giphy.com/';
             protected static $glue = array('embed/', '', '');
             protected static $dims = array(
-                'width'    => array(
-                    'default' => '480',
-                ),
-                'height'   => array(
-                    'default' => '480',
-                ),
-                'ratio'    => array(
-                    'default' => '',
-                ),
+                'width'  => '480',
+                'height' => '480',
+                'ratio'  => '',
             );
         }
     }
