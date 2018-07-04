@@ -36,10 +36,8 @@ namespace Oui {
         class Giphy extends Provider
         {
             protected static $patterns = array(
-                'video' => array(
-                    'scheme' => '#^(http|https)://giphy\.com/(embed/|gifs/[\S]+[-])([0-9a-zA-Z]+)$#i',
-                    'id'     => '3',
-                ),
+                'scheme' => '#^(http|https)://giphy\.com/(embed/|gifs/[\S]+[-])([0-9a-zA-Z]+)$#i',
+                'id'     => '3',
             );
             protected static $src = '//giphy.com/';
             protected static $glue = array('embed/', '', '');
