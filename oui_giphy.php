@@ -29,23 +29,22 @@
  * @package Oui\Player
  */
 
-namespace Oui {
+namespace Oui;
 
-    if (class_exists('Oui\Provider')) {
+if (class_exists('Oui\Provider')) {
 
-        class Giphy extends Provider
-        {
-            protected static $patterns = array(
-                'scheme' => '#^(http|https)://giphy\.com/(embed/|gifs/[\S]+[-])([0-9a-zA-Z]+)$#i',
-                'id'     => '3',
-            );
-            protected static $src = '//giphy.com/';
-            protected static $glue = array('embed/', '', '');
-            protected static $dims = array(
-                'width'  => '480',
-                'height' => '480',
-                'ratio'  => '',
-            );
-        }
+    class Giphy extends Provider
+    {
+        protected static $srcBase = '//giphy.com/';
+        protected static $srcGlue = array('embed/', '', '');
+        protected static $iniDims = array(
+            'width'  => '480',
+            'height' => '480',
+            'ratio'  => '',
+        );
+        protected static $mediaPatterns = array(
+            'scheme' => '#^https?://giphy\.com/(embed/|gifs/[\S]+[-])([0-9a-zA-Z]+)$#i',
+            'id'     => '2',
+        );
     }
 }
