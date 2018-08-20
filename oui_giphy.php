@@ -31,9 +31,9 @@
 
 namespace Oui;
 
-if (class_exists('Oui\Provider')) {
+if (class_exists('Oui\Player\Provider')) {
 
-    class Giphy extends Provider
+    class Giphy extends Player\Provider
     {
         protected static $srcBase = '//giphy.com/';
         protected static $srcGlue = array('embed/', '', '');
