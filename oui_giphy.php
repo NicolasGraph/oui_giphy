@@ -35,6 +35,9 @@ if (class_exists('Oui\Player\Provider')) {
 
     class Giphy extends Player\Provider
     {
+        protected static $endPoint = 'https://giphy.com/services/oembed?url=';
+        protected static $URLBase = 'https://giphy.com/gifs/';
+
         protected static $srcBase = '//giphy.com/';
         protected static $srcGlue = array('embed/', '', '');
         protected static $iniDims = array(
