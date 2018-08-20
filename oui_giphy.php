@@ -33,7 +33,7 @@ namespace Oui;
 
 if (class_exists('Oui\Player\Provider')) {
 
-    class Giphy extends Player\Provider
+    class Giphy extends Player\Oembed
     {
         protected static $endPoint = 'https://giphy.com/services/oembed?url=';
         protected static $URLBase = 'https://giphy.com/gifs/';
