@@ -33,9 +33,9 @@ namespace Oui;
 
 if (class_exists('Oui\Player\Provider')) {
 
-    class Giphy extends Player\Oembed
+    class Giphy extends Player\OEmbed
     {
-        protected static $endPoint = 'https://giphy.com/services/oembed?url=';
+        protected static $endPoint = 'https://giphy.com/services/oembed';
         protected static $URLBase = 'https://giphy.com/gifs/';
 
         protected static $srcBase = '//giphy.com/';
